@@ -1,0 +1,30 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "Unit testing using mocha and chai.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha './test/**/*.spec.js' --watch",
+    "start": "nodemon src/index.js",
+    "coverage": "c8 --reporter=text npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.10",
+    "config": "^3.3.12",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "c8": "^10.1.2",
+    "chai": "^5.1.1",
+    "chai-as-promised": "^8.0.0",
+    "mocha": "^10.7.0",
+    "nock": "^13.5.4",
+    "nodemon": "^3.1.4",
+    "nyc": "^17.0.0",
+    "sinon": "^18.0.0"
+  }
+}
